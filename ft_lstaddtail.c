@@ -1,23 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_lstaddtail.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/29 13:50:38 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/03 05:30:43 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/03/01 14:22:40 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/03/17 14:35:22 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void	ft_lstaddtail(t_list **alst, t_list *newlist)
 {
-	if (alst)
+	t_list *last;
+
+	if (newlist)
 	{
-		if (new)
-			new->next = *alst;
-		*alst = new;
+		if (*alst)
+		{
+			last = *alst;
+			while (last)
+			{
+				last = last->next;
+				if (last)
+					last->next = newlist;
+			}
+		}
+		else
+			*alst = newlist;
 	}
 }

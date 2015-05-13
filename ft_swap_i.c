@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_swap_i.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/29 13:50:38 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/03 05:30:43 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/03/01 14:17:28 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/03/01 14:21:43 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_lstadd(t_list **alst, t_list *new)
+void	ft_swap_i(int *a, int *b)
 {
-	if (alst)
+	int tmp;
+
+	if (a && b)
 	{
-		if (new)
-			new->next = *alst;
-		*alst = new;
+		tmp = *b;
+		*b = *a;
+		*a = tmp;
 	}
 }

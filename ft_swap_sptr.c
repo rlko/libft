@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_swap_sptr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/29 13:50:38 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/03 05:30:43 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/03/01 14:28:48 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/03/01 14:29:18 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** CAN'T EXPLAIN THIS SHIT BUT IT REMOVES THE TMP VAR
+** s1 = *s1 + (*s1 - *s2);
+** s2 = *s1 - (*s1 - *s2)/2;
+** s1 = *s1 - (*s1 - *s2)*2;
+*/
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void ft_swap_sptr(char **s1, char **s2)
 {
-	if (alst)
-	{
-		if (new)
-			new->next = *alst;
-		*alst = new;
-	}
+	char *tmp;
+
+	tmp = *s1;
+	*s1 = *s2;
+	*s2 = tmp;
 }

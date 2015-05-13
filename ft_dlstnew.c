@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_dlstnew.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/26 17:17:36 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/03 05:31:29 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/05/12 07:30:49 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-t_list	*ft_lstnew(void const *content, size_t content_size)
+t_dlst	*ft_dlstnew(void const *content, size_t content_size)
 {
-	t_list	*new;
+	t_dlst	*new;
 
-	if (!(new = (t_list *)malloc(sizeof(t_list))))
+	if (!(new = (t_dlst *)malloc(sizeof(t_dlst))))
 		return (NULL);
 	if (content == NULL)
 	{
@@ -33,5 +33,6 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		((char *)(new->content))[new->content_size] = '\0';
 	}
 	new->next = NULL;
+	new->prev = NULL;
 	return (new);
 }

@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_free_dlst.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/29 13:50:38 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/03 05:30:43 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/05/03 04:34:14 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/05/12 10:01:18 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void	ft_free_dlst(t_dlst **head)
 {
-	if (alst)
+	t_dlst	*l;
+	t_dlst	*tmp;
+
+	l = *head;
+	while (l != NULL)
 	{
-		if (new)
-			new->next = *alst;
-		*alst = new;
+		tmp = l;
+		l = l->next;
+		free(tmp);
 	}
+	*head = NULL;
 }
