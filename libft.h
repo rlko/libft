@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/12 10:19:30 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/05/15 06:16:25 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef struct		s_dlist
 	size_t			content_size;
 	struct s_dlist	*next;
 	struct s_dlist	*prev;
-}					t_dlst;
+}					t_dlist;
 int					ft_atoi(const char *str);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -66,6 +66,8 @@ void				ft_putnbr_fd(int n, int fd);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
+void				ft_putlst(t_list *list);
+void				ft_putdlst(t_dlist *list);
 void				ft_bzero(void *s, size_t n);
 void				ft_strclr(char *s);
 void				ft_striter(char *s, void (*f)(char *));
@@ -79,9 +81,9 @@ void				ft_lstaddtail(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				ft_swap_sptr(char **s1, char **s2);
 void				ft_swap_i(int *a, int *b);
-void				ft_free_tlist(t_list **head);
-void				ft_free_dlst(t_dlst **head);
-void				ft_dlstadd(t_dlst **alst, t_dlst *new);
+void				ft_free_tlst(t_list **head);
+void				ft_free_tdlst(t_dlist **head);
+void				ft_dlstadd(t_dlist **alst, t_dlist *new);
 void				*ft_memset(void *b, int c, size_t len);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
@@ -93,6 +95,6 @@ size_t				ft_strlcat(char *dst, const char *src, size_t size);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstappend(t_list *lst, void *data);
-t_dlst				*ft_dlstnew(void const *content, size_t content_size);
-t_dlst				*ft_dlstappend(t_dlst *lst, void *data);
+t_dlist				*ft_dlstnew(void const *content, size_t content_size);
+t_dlist				*ft_dlstappend(t_dlist *lst, void *data);
 #endif

@@ -6,18 +6,18 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/26 17:17:36 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/12 07:30:49 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/05/15 06:17:21 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-t_dlst	*ft_dlstnew(void const *content, size_t content_size)
+t_dlist	*ft_dlstnew(void const *content, size_t content_size)
 {
-	t_dlst	*new;
+	t_dlist	*new;
 
-	if (!(new = (t_dlst *)malloc(sizeof(t_dlst))))
+	if (!(new = (t_dlist *)malloc(sizeof(t_dlist))))
 		return (NULL);
 	if (content == NULL)
 	{
