@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/15 06:16:25 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/05/15 23:20:54 by Lon              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,8 @@ void				ft_lstaddtail(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				ft_swap_sptr(char **s1, char **s2);
 void				ft_swap_i(int *a, int *b);
-void				ft_free_tlst(t_list **head);
-void				ft_free_tdlst(t_dlist **head);
+void				ft_free_lst(t_list **head);
+void				ft_free_dlst(t_dlist **head);
 void				ft_dlstadd(t_dlist **alst, t_dlist *new);
 void				*ft_memset(void *b, int c, size_t len);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
