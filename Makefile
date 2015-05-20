@@ -6,7 +6,7 @@
 #    By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/13 16:33:54 by rliou-ke          #+#    #+#              #
-#    Updated: 2015/05/17 06:03:35 by rliou-ke         ###   ########.fr        #
+#    Updated: 2015/05/20 07:31:16 by rliou-ke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS = ft_isascii.c ft_memdel.c ft_putstr.c ft_strequ.c \
 	ft_strmapi.c ft_strstr.c ft_isalpha.c \
 	ft_memcpy.c ft_putnbr_fd.c ft_strncat.c ft_strsub.c \
 	ft_strsplit.c ft_strlcat.c ft_memchr.c ft_swap_sptr.c \
-	ft_lstaddtail.c ft_swap_i.c	ft_lstnew.c ft_lstdelone.c \
+	 ft_swap_i.c	ft_lstnew.c ft_lstdelone.c \
 	ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
 	ft_lstappend.c ft_free_lst.c \
 	ft_dlstadd.c ft_dlstappend.c ft_dlstnew.c ft_free_dlst.c \

@@ -6,13 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 14:04:00 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/12/03 15:44:17 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/05/20 07:42:13 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isblank(int c)
+static int		ft_isblank(int c)
 {
 	if (c)
 	{
@@ -23,7 +23,7 @@ int		ft_isblank(int c)
 	return (c);
 }
 
-char	*ft_strtrim(char const *s)
+char			*ft_strtrim(char const *s)
 {
 	char	*tmp;
 	size_t	i;

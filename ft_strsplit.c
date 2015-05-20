@@ -6,14 +6,14 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 17:03:09 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/13 17:36:44 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/05/20 07:40:49 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-int		ft_count_word(char const *s, char c)
+static int		ft_count_word(char const *s, char c)
 {
 	int	i;
 	int	j;
@@ -34,7 +34,7 @@ int		ft_count_word(char const *s, char c)
 	return (j);
 }
 
-int		ft_count_letter(const char *s, char c, unsigned int start)
+static int		ft_count_letter(const char *s, char c, unsigned int start)
 {
 	int	i;
 
@@ -44,7 +44,7 @@ int		ft_count_letter(const char *s, char c, unsigned int start)
 	return (i);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	int		j;
