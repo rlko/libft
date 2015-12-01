@@ -6,13 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:48:29 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/12 17:57:31 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:44:53 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t i;
 

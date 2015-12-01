@@ -6,13 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/29 14:24:02 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/12/03 15:40:05 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:44:18 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	if (f)
 	{

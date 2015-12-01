@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/01 14:28:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/03/01 14:29:18 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:46:50 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** s1 = *s1 - (*s1 - *s2)*2;
 */
 
-void ft_swap_sptr(char **s1, char **s2)
+void	ft_swap_sptr(char **s1, char **s2)
 {
 	char *tmp;
 

@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_power.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:47:53 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/11/23 10:45:22 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/12/01 10:21:29 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/12/01 10:21:57 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_power(int base, int n)
 {
-	int		i;
+	int half_pow;
 
-	i = 0;
-	if (n < 1)
-		return (0);
-	while ((s1[i] == s2[i]) && s1[i] && s2[i] && (size_t)i < n)
-		i++;
-	if ((size_t)i == n)
-		return ((int)((unsigned char)s1[i - 1] - (unsigned char)s2[i - 1]));
-	return ((int)((unsigned char)s1[i] - (unsigned char)s2[i]));
+	if (n == 0)
+		return (1);
+	else if (n < 0)
+		return (1 / ft_power(base, -n));
+	else if (n % 2 == 0)
+	{
+		half_pow = ft_power(base, n / 2);
+		return (half_pow * half_pow);
+	}
+	else
+		return (base * ft_power(base, n - 1));
 }

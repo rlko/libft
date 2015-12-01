@@ -6,14 +6,14 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:47:19 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/12 17:12:46 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:42:52 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-char *ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	char *tmp;
 

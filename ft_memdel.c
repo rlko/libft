@@ -6,13 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 11:46:34 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/10 17:49:06 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:38:16 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
 	if (ap)
 	{

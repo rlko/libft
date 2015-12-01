@@ -6,13 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 17:47:14 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/12 18:14:51 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:40:47 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-	write (1, &c, 1);
+	write(1, &c, 1);
 }

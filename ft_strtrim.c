@@ -6,13 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 14:04:00 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/20 07:42:13 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/27 09:33:22 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_isblank(int c)
+static int		is_blank(int c)
 {
 	if (c)
 	{
@@ -34,9 +34,9 @@ char			*ft_strtrim(char const *s)
 		return (NULL);
 	i = 0;
 	j = ft_strlen(s);
-	while (ft_isblank(s[j - 1]))
+	while (is_blank(s[j - 1]))
 		j--;
-	while (ft_isblank(s[i]))
+	while (is_blank(s[i]))
 		i++;
 	if (s[i] == '\0')
 	{

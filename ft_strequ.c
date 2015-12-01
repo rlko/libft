@@ -6,13 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 18:44:20 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/12/03 15:22:39 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:43:09 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strequ(char const *s1, char const *s2)
+int	ft_strequ(char const *s1, char const *s2)
 {
 	if (s1 != NULL && s2 != NULL)
 	{

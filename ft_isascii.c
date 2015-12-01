@@ -6,11 +6,11 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 13:04:58 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/12 17:16:55 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:36:24 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

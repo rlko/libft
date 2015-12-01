@@ -6,11 +6,11 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 13:23:16 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/08 16:03:22 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:47:06 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c = c + 32;

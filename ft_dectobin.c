@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_dectobin.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:47:53 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/11/23 10:45:22 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/11/27 10:55:27 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/12/01 10:22:06 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+long	ft_dectobin(int nb)
 {
-	int		i;
+	long	bin;
+	int		n;
+	int		p;
 
-	i = 0;
-	if (n < 1)
-		return (0);
-	while ((s1[i] == s2[i]) && s1[i] && s2[i] && (size_t)i < n)
-		i++;
-	if ((size_t)i == n)
-		return ((int)((unsigned char)s1[i - 1] - (unsigned char)s2[i - 1]));
-	return ((int)((unsigned char)s1[i] - (unsigned char)s2[i]));
+	n = 0;
+	bin = 0;
+	while (ft_power(2, n) < nb)
+		n++;
+	n--;
+	while (nb)
+	{
+		if (nb >= (p = ft_power(2, n)))
+		{
+			nb = nb - p;
+			bin = ft_power(10, n) + bin;
+		}
+		n--;
+	}
+	return (bin);
 }

@@ -6,11 +6,11 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 17:57:50 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/10 12:54:20 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:43:27 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	if (f)
 	{

@@ -6,11 +6,11 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 14:49:54 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/10 12:53:33 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:41:43 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int i;
 	int j;

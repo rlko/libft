@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/20 07:37:23 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/12/01 10:23:05 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ typedef struct		s_dlist
 }					t_dlist;
 char				**ft_strsplit(char const *s, char c);
 char				*ft_itoa(int n);
+char				*ft_epurstr(char *str);
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strcpy(char *dst, const char *src);
@@ -50,7 +51,9 @@ int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
+int					ft_isblank(int c);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
+int					ft_power(int base, int n);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -58,6 +61,7 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 long				ft_atol(const char *str);
+long				ft_dectobin(int nb);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(const char *s);
 t_dlist				*ft_dlstappend(t_dlist *lst, void *data);
@@ -80,6 +84,7 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				ft_memdel(void **ap);
+void				ft_pustr(char *s);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putdlst(t_dlist *list);

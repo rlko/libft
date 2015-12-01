@@ -6,11 +6,11 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:45:40 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/10 12:43:00 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:34:53 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int plusle;
 	int i;

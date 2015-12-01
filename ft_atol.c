@@ -6,11 +6,11 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/05 04:15:03 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/05/12 07:25:39 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:34:30 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-long ft_atol(const char *str)
+long	ft_atol(const char *str)
 {
 	int		plusle;
 	long	i;

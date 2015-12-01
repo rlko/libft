@@ -6,11 +6,11 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:47:00 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/12/02 19:03:04 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:42:22 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strcmp(const char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	int i;
 

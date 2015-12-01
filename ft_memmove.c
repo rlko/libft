@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 16:11:29 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/15 14:43:19 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/11/23 10:39:58 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	{
 		tmp = ft_memcpy(tmp, src, len);
 		dst = ft_memcpy(dst, tmp, len);
-		free (tmp);
+		free(tmp);
 	}
 	return (dst);
 }
