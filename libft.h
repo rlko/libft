@@ -1,10 +1,12 @@
+/* ************************************************************************** */
+/*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/01 13:12:14 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/12/02 12:24:59 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +65,7 @@ long				ft_atol(const char *str);
 long				ft_dectobin(int nb);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(const char *s);
-size_t				ft_tablen(const char **tab);
+size_t				ft_tablen(char **tab);
 t_dlist				*ft_dlstappend(t_dlist *lst, void *data);
 t_dlist				*ft_dlstnew(void const *content, size_t content_size);
 t_list				*ft_lstappend(t_list *lst, void *data);

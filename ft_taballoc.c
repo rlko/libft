@@ -6,14 +6,14 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/02 10:19:06 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/02 10:19:29 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/12/02 12:23:23 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char **ft_taballoc(size_t size)
+char	**ft_taballoc(size_t size)
 {
 	char	**tab;
-	
+
 	tab = malloc(sizeof(tab) * size + 1);
 	if (tab)
 		tab[size] = 0;

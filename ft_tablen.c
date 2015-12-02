@@ -6,13 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/02 10:16:25 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/02 10:18:00 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/12/02 12:21:04 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t	ft_tablen(const char **tab)
+size_t	ft_tablen(char **tab)
 {
 	size_t i;
 
