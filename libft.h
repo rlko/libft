@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/02 12:24:59 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2015/12/02 12:51:22 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,7 @@ void				ft_strclr(char *s);
 void				ft_strdel(char **as);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
+void				ft_tabdel(char **tab, int size);
 void				ft_swap_i(int *a, int *b);
 void				ft_swap_sizet(size_t *a, size_t *b);
 void				ft_swap_sptr(char **s1, char **s2);
