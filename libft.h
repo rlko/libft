@@ -1,5 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
@@ -28,6 +26,7 @@ typedef struct		s_dlist
 	struct s_dlist	*prev;
 }					t_dlist;
 char				**ft_strsplit(char const *s, char c);
+char				**ft_taballoc(size_t size);
 char				*ft_itoa(int n);
 char				*ft_epurstr(char *str);
 char				*ft_strcat(char *s1, const char *s2);
@@ -64,6 +63,7 @@ long				ft_atol(const char *str);
 long				ft_dectobin(int nb);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(const char *s);
+size_t				ft_tablen(const char **tab);
 t_dlist				*ft_dlstappend(t_dlist *lst, void *data);
 t_dlist				*ft_dlstnew(void const *content, size_t content_size);
 t_list				*ft_lstappend(t_list *lst, void *data);
