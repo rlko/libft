@@ -6,14 +6,13 @@
 /*   By: rliou-ke <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/05 21:00:38 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/04 18:07:28 by Lon              ###   ########.fr       */
+/*   Updated: 2015/12/04 18:51:55 by Lon              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <unistd.h>
 #include "get_next_line.h"
-#include "libft.h"
 
 static t_gnl	*prep_stock(int const fd)
 {
