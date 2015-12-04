@@ -6,7 +6,7 @@
 #    By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/13 16:33:54 by rliou-ke          #+#    #+#              #
-#    Updated: 2015/12/04 18:12:40 by Lon              ###   ########.fr        #
+#    Updated: 2015/12/04 18:33:26 by Lon              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ SRC = ft_isascii.c ft_memdel.c ft_putstr.c ft_strequ.c \
 	ft_dlstadd.c ft_dlstappend.c ft_dlstnew.c ft_free_dlst.c \
 	ft_putdlst.c ft_isblank.c ft_epurstr.c ft_dectobin.c \
 	ft_power.c ft_swap_sizet.c ft_tablen.c ft_taballoc.c \
-	ft_tabdel.c get_next_line.c ft_printf.c
+	ft_tabdel.c get_next_line.c ft_printf.c ft_putyo.c
 OBJDIR = obj
 OBJ = $(patsubst %.c,$(OBJDIR)/%.o,$(SRC))
 
