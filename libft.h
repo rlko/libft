@@ -6,14 +6,13 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/04 18:52:05 by Lon              ###   ########.fr       */
+/*   Updated: 2015/12/05 20:44:03 by Lon              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
-# include "get_next_line.h"
 
 typedef struct		s_list
 {
