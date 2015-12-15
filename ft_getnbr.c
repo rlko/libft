@@ -1,23 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putyo.c                                         :+:      :+:    :+:   */
+/*   ft_getnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/04 18:31:25 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/15 15:55:47 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/12/15 15:52:58 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/12/15 15:57:17 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putyo(void)
+int		ft_getnbr(const char *str)
 {
-	static int	i = 0;
+	int		i;
+	int		c;
 
-	ft_putstr("yo #");
-	ft_putnbr(i);
-	ft_putchar('\n');
-	i++;
+	i = 0;
+	c = 0;
+	while (str[i] != 0)
+	{
+		if ((str[i] == '-' && ft_isdigit(str[i + 1])) || ft_isdigit(str[i]))
+		{
+			i = i + 1;
+			while (str[i] && ft_isdigit(str[i]))
+				i++;
+			c++;
+		}
+		else
+			i++;
+	}
+	return (c);
 }
