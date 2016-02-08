@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/15 15:57:12 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/02/08 15:24:14 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ char				*ft_strstr(const char *s1, const char *s2);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
 int					ft_atoi(const char *str);
+int					ft_error(char *s);
 int					ft_getnbr(const char *str);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -80,6 +81,7 @@ void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
 void				ft_dlstadd(t_dlist **alst, t_dlist *new);
+void				ft_exit_error(char *s);
 void				ft_free_dlst(t_dlist **head);
 void				ft_free_lst(t_list **head);
 void				ft_lstadd(t_list **alst, t_list *new);
