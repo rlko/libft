@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/23 03:12:01 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/02/27 08:10:14 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/02/27 18:14:28 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,8 @@ t_list			*ft_lstsplit(char *str, int c)
 		j = delimit(str, c, i);
 		if ((list = mk_path_node(str, i, j == len ? j + 1 : j)))
 			head = add_node(head, list);
+		while (str[j] && str[j] == c)
+			j++;
 		i = j;
 	}
 	return (head);
