@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/24 02:49:36 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/11/27 09:30:59 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/02/27 04:47:50 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ char		*ft_epurstr(char *str)
 
 	i = begin_epur(str);
 	j = 0;
-	tmp = ft_strnew(ft_strlen(str));
+	if (!(tmp = ft_strnew(ft_strlen(str))))
+		return (0);
 	while (str[i] != 0)
 	{
 		if (!(ft_isblank(str[i]) && ft_isblank(str[i - 1])))
@@ -44,8 +45,8 @@ char		*ft_epurstr(char *str)
 	tmp[j] = 0;
 	if (ft_isblank(tmp[j - 1]))
 		tmp[j - 1] = 0;
-	tmp2 = ft_strdup(tmp);
-	ft_bzero(tmp, ft_strlen(str));
+	if (!(tmp2 = ft_strdup(tmp)))
+		return (0);
 	ft_strdel(&tmp);
 	return (tmp2);
 }
