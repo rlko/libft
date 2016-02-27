@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/08 15:22:24 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/02/08 15:23:17 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/02/27 05:03:17 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int			ft_error(char *s)
 {
 	write(2, s, slen(s));
 	write(2, "\n", 1);
-	return (0);
+	return (1);
 }
 
 void		ft_exit_error(char *s)
