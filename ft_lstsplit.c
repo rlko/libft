@@ -6,17 +6,15 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/23 03:12:01 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/02/23 05:05:02 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/02/27 08:10:14 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-static int		delimit(char *str, int delimchar)
+static int		delimit(char *str, int delimchar, int i)
 {
-	static int	i = 0;
-
 	while (str[i] != '\0')
 	{
 		if (str[i] == delimchar)
@@ -78,7 +76,7 @@ t_list			*ft_lstsplit(char *str, int c)
 	len = ft_strlen(str);
 	while (i != len)
 	{
-		j = delimit(str, c);
+		j = delimit(str, c, i);
 		if ((list = mk_path_node(str, i, j == len ? j + 1 : j)))
 			head = add_node(head, list);
 		i = j;
