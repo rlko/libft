@@ -6,7 +6,7 @@
 #    By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/13 16:33:54 by rliou-ke          #+#    #+#              #
-#    Updated: 2016/02/23 03:49:20 by rliou-ke         ###   ########.fr        #
+#    Updated: 2016/03/05 06:57:54 by rliou-ke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,7 @@ $(OBJDIR) :
 	@mkdir -p $@
 
 $(OBJDIR)/%.o : %.c
-	@gcc $(CFLAGS) -I. -c $< -o $@
+	@gcc $(CFLAGS) -I. -c $< -o $@ -g
 
 clean :
 	@rm -fr $(OBJDIR)

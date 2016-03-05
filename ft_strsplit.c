@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 17:03:09 by rliou-ke          #+#    #+#             */
-/*   Updated: 2015/12/13 13:10:51 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/03/05 07:45:56 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,40 +34,43 @@ static int		ft_count_word(char const *s, char c)
 	return (j);
 }
 
-static int		ft_count_letter(const char *s, char c, unsigned int start)
+static int		ft_count_letter(const char *s, char c, unsigned int i)
 {
-	int	i;
+	int	len;
 
-	i = 0;
-	while (s[start + i] != c && s[i])
+	len = 0;
+	while (s[i] != c && s[i])
+	{
 		i++;
-	return (i);
+		len++;
+	}
+	return (len);
 }
 
 char			**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	int		j;
+	int		len;
 	char	**tab;
 
 	i = 0;
 	j = 0;
-	if (!s || !(tab = malloc(sizeof(char **) * ft_count_word(s, c) + 1)))
+	if (!s || !(tab = malloc(sizeof(*tab) * (ft_count_word(s, c) + 1))))
 		return (NULL);
-	tab[ft_count_word(s, c)] = NULL;
-	while (s[i])
+	while (s[i] != 0)
 	{
 		if (s[i] != c)
 		{
-			if (!(tab[j] = malloc(sizeof(char *) * ft_count_letter(s, c, i))))
+			len = ft_count_letter(s, c, i);
+			if (!(tab[j] = ft_strsub(s, i, len)))
 				return (NULL);
-			tab[j] = ft_strsub(s, i, ft_count_letter(s, c, i));
 			j++;
-			while (s[i] != c && s[i])
-				i++;
+			i = i + len;
 		}
 		else
 			i++;
 	}
+	tab[j] = NULL;
 	return (tab);
 }
