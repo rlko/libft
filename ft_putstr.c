@@ -6,17 +6,23 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 17:50:54 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/10 12:53:03 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/03/14 20:44:12 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
-void	ft_putstr(char const *s)
+static int	slen(const char *s)
 {
-	int i;
+	char	*tmp;
 
-	i = 0;
-	while (s[i])
-		ft_putchar(s[i++]);
+	tmp = (char *)s;
+	while (*tmp)
+		tmp++;
+	return (tmp - s);
+}
+
+void		ft_putstr(char const *s)
+{
+	write(1, s, slen(s));
 }

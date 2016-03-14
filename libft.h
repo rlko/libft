@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/02/23 03:48:15 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/03/14 21:12:56 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,6 @@ size_t				ft_strlen(const char *s);
 size_t				ft_tablen(char **tab);
 t_dlist				*ft_dlstappend(t_dlist *lst, void *data);
 t_dlist				*ft_dlstnew(void const *content, size_t content_size);
-t_list				*ft_lstappend(t_list *lst, void *data);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstsplit(char *str, int c);
@@ -86,6 +85,7 @@ void				ft_exit_error(char *s);
 void				ft_free_dlst(t_dlist **head);
 void				ft_free_lst(t_list **head);
 void				ft_lstadd(t_list **alst, t_list *new);
+void				ft_lstappend(t_list **begin, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
