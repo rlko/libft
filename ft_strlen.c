@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:48:29 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/03/14 09:46:02 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/03/14 20:17:45 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ size_t		ft_strlen(const char *s)
 
 	tmp = (char *)s;
 	while (*tmp)
-		*tmp++;
+		tmp++;
 	return (tmp - s);
 }
