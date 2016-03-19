@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/08 15:22:24 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/02/27 05:03:17 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/03/19 11:54:43 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 
 static int	slen(const char *s)
 {
-	int		i;
+	char	*i;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	i = (char *)s;
+	while (*i)
+		++i;
+	return (i - s);
 }
 
 int			ft_error(char *s)

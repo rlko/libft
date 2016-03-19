@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 17:50:54 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/03/14 20:44:12 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/03/19 11:54:59 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	slen(const char *s)
 
 	tmp = (char *)s;
 	while (*tmp)
-		tmp++;
+		++tmp;
 	return (tmp - s);
 }
 
