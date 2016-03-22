@@ -33,7 +33,7 @@ SRC = ft_isascii.c ft_memdel.c ft_putstr.c ft_strequ.c \
 	ft_putdlst.c ft_isblank.c ft_epurstr.c ft_dectobin.c \
 	ft_power.c ft_swap_sizet.c ft_tablen.c ft_taballoc.c \
 	ft_tabdel.c ft_putyo.c ft_getnbr.c ft_error.c ft_lstsplit.c \
-	ft_tabdup.c ft_strcombo.c
+	ft_tabdup.c
 OBJDIR = obj
 OBJ = $(patsubst %.c,$(OBJDIR)/%.o,$(SRC))
 
