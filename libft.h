@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/03/14 21:43:41 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/04/27 16:21:39 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ long				ft_dectobin(int nb);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(const char *s);
 size_t				ft_tablen(char **tab);
+size_t				ft_lstlen(t_list *lst);
 t_dlist				*ft_dlstappend(t_dlist *lst, void *data);
 t_dlist				*ft_dlstnew(void const *content, size_t content_size);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
