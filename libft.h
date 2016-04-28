@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:35:48 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/04/27 16:21:39 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/04/28 12:36:07 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 int					ft_isblank(int c);
+int					ft_isnumber(char *str);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 int					ft_power(int base, int n);
 int					ft_strcmp(const char *s1, const char *s2);
