@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 18:42:35 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/12/02 20:07:31 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/05/21 16:43:50 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	if (s != NULL && f != NULL)
 	{
 		i = 0;
-		if ((tmp = ft_strnew(ft_strlen(s) + 1)))
+		if ((tmp = ft_strnew(ft_strlen(s))))
 		{
 			while (s[i])
 			{

@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:48:29 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/03/19 11:53:33 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/05/21 12:40:35 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t		ft_strlen(const char *s)
 {
-	char	*tmp;
+	register const char	*tmp;
 
 	tmp = (char *)s;
 	while (*tmp)

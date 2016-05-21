@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 17:56:44 by rliou-ke          #+#    #+#             */
-/*   Updated: 2014/11/13 17:09:22 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/05/21 16:48:20 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 void	ft_putendl(char const *s)
 {
+	if (!s)
+		return ;
 	write(1, s, ft_strlen(s));
 	write(1, "\n", 1);
 }

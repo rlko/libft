@@ -6,7 +6,7 @@
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 16:46:15 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/03/05 06:20:09 by rliou-ke         ###   ########.fr       */
+/*   Updated: 2016/05/21 16:42:42 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnew(size_t size)
 	unsigned int	i;
 
 	i = 0;
-	tmp = malloc(sizeof(tmp) * ((size) + 1));
+	tmp = malloc(sizeof(*tmp) * ((size) + 1));
 	if (tmp)
 	{
 		while (i <= size)
