@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pustr.c                                         :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/06/10 12:19:56 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/05/21 16:47:34 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/03/01 14:17:28 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/03/01 14:21:43 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <unistd.h>
-
-void	ft_pustr(char *s)
+void	ft_swap(int *a, int *b)
 {
-	if (s)
-		write(1, s, ft_strlen(s));
+	int tmp;
+
+	if (a && b)
+	{
+		tmp = *b;
+		*b = *a;
+		*a = tmp;
+	}
 }

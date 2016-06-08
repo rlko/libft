@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_swapstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rliou-ke <rliou-ke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 17:50:54 by rliou-ke          #+#    #+#             */
-/*   Updated: 2016/05/21 16:46:49 by rliou-ke         ###   ########.fr       */
+/*   Created: 2015/03/01 14:28:48 by rliou-ke          #+#    #+#             */
+/*   Updated: 2015/11/23 10:46:50 by rliou-ke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <unistd.h>
+/*
+** CAN'T EXPLAIN THIS SHIT BUT IT REMOVES THE TMP VAR
+** s1 = *s1 + (*s1 - *s2);
+** s2 = *s1 - (*s1 - *s2)/2;
+** s1 = *s1 - (*s1 - *s2)*2;
+*/
 
-void		ft_putstr(char const *s)
+void	ft_swapstr(char **s1, char **s2)
 {
-	if (s)
-		write(1, s, ft_strlen(s));
-}
+	char *tmp;
 
-void		ft_pustr(char const *s)
-{
-	ft_putstr(s);
+	tmp = *s1;
+	*s1 = *s2;
+	*s2 = tmp;
 }
