@@ -18,8 +18,3 @@ void		ft_putstr(char const *s)
 	if (s)
 		write(1, s, ft_strlen(s));
 }
-
-void		ft_pustr(char const *s)
-{
-	ft_putstr(s);
-}
