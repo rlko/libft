@@ -31,5 +31,11 @@
 # Debug files
 *.dSYM/
 
-# Temp files
+# Vim temp files
 .*.swp
+
+# Mac
+._*
+.nfs.*
+.DS_Store
+._.DS_Store
